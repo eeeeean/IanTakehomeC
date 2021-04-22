@@ -1,0 +1,106 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f4;
+}
+
+.devicesWrapper {
+  background-color: #f8f8f4;
+  height: 100%;
+}
+.devicesWrapper .devicesColumn {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  width: 250px;
+  padding: 20px 0px 0px 20px;
+  margin-left: 20px;
+}
+.devicesWrapper .devicesColumn .deviceTitle {
+  font-size: 32px;
+  color: #525252;
+  margin-bottom: 8px;
+}
+.devicesWrapper .devicesColumn a {
+  color: #393939;
+  text-decoration: none;
+}
+.devicesWrapper .devicesColumn a .device {
+  height: 70px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 3%;
+  border: 1px solid #b8b6b6;
+  background-color: #fffdfd;
+  margin-bottom: 10px;
+}
+.devicesWrapper .devicesColumn a .device:hover {
+  box-shadow: 2px 2px #858585;
+}
+.devicesWrapper .devicesColumn a .device:hover .greyLink {
+  color: #060606;
+  text-decoration: underline;
+}
+.devicesWrapper .devicesColumn a .device .deviceName {
+  color: #060606;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.graphsWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f4;
+}
+.graphsWrapper .greyLink {
+  align-self: flex-start;
+  width: 100%;
+  padding: 6px 0px 0px 6px;
+}
+.graphsWrapper .greyLink a {
+  color: #393939;
+  text-decoration: none;
+  font-size: 18px;
+}
+.graphsWrapper .greyLink a:hover {
+  color: #060606;
+  text-decoration: underline;
+}
+.graphsWrapper .graphsColumn {
+  color: #525252;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  background-color: white;
+  padding: 8px 20px 0px 20px;
+}
+.graphsWrapper .graphsColumn .deviceTitle {
+  font-size: 32px;
+  align-self: center;
+}
+.graphsWrapper .graphsColumn .readingTitle {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.graphsWrapper .graphsColumn .graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-tooltip {
+  background-color: #fefefd;
+  border-radius: 3%;
+  border: 1px solid #b8b6b6;
+  color: #525252;
+}
+.custom-tooltip .tooltipText {
+  margin: 6px 6px;
+  font-size: 14px;
+}
+
+.xAxis {
+  fill: #525252;
+}
+
+/*# sourceMappingURL=style.css.map */

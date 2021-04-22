@@ -1,0 +1,122 @@
+$chart-text-color: #525252;
+$background-offset: #f8f8f4;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-offset;
+}
+
+.devicesWrapper {
+  background-color: $background-offset;
+  height: 100%;
+
+  .devicesColumn {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    width: 250px;
+    padding: 20px 0px 0px 20px;
+    margin-left: 20px;
+
+    .deviceTitle {
+      font-size: 32px;
+      color: $chart-text-color;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: darken($chart-text-color, 10%);
+      text-decoration: none;
+    
+      .device {
+        height: 70px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 3%;
+        border: 1px solid #b8b6b6;
+        background-color: rgb(255, 253, 253);
+        margin-bottom: 10px;
+    
+        &:hover {
+          box-shadow: 2px 2px lighten($chart-text-color, 20%);
+    
+          .greyLink {
+            color: darken($chart-text-color, 30%);
+            text-decoration: underline;
+          }
+        }
+    
+        .deviceName {
+          color: darken($chart-text-color, 30%);
+          font-size: 22px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+.graphsWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $background-offset;
+
+  .greyLink {
+    align-self: flex-start;
+    width: 100%;
+    padding: 6px 0px 0px 6px;
+
+    a {
+      color: darken($chart-text-color, 10%);
+      text-decoration: none;
+      font-size: 18px;
+
+      &:hover {
+        color: darken($chart-text-color, 30%);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .graphsColumn {
+    color: $chart-text-color;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background-color: white;
+    padding: 8px 20px 0px 20px;
+
+    .deviceTitle {
+      font-size: 32px;
+      align-self: center;
+    }
+
+    .readingTitle {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .graph {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.custom-tooltip {
+  background-color: lighten($background-offset, 3%);
+  border-radius: 3%;
+  border: 1px solid #b8b6b6;
+  color: $chart-text-color;
+
+  .tooltipText {
+    margin: 6px 6px;
+    font-size: 14px;
+  }
+}
+
+.xAxis {
+  fill: $chart-text-color;
+}
